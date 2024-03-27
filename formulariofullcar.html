@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FullCar</title>
+</head>
+
+<body>
+    <h2>Formulário FullCar:</h2>
+    <hr />
+
+    <form action="" method="post"></form>
+     <fieldset>
+            
+        <legend>Veículo:</legend>
+
+        <label>Tipo:</label>
+            <label>
+                <input type="radio" name="uso" value="novo" /> Novo
+            </label>
+            <label>
+                <input type="radio" name="uso" value="usado" required /> Usado
+            </label>
+            <label for="">Categoria:</label>
+            <select name="categoria" id="categoria">
+                <option value="Hatch">Hatch</option>
+                <option value="SUV">SUV</option>
+                <option value="Sedã">Sedã</option>
+                <option value="Picape">Picape</option>
+                <option value="Utilitário">Utilitário</option>
+                <option value="Perua">Perua</option>
+                <option value="Minivan">Minivan</option>
+                <option value="Conversível">Conversível</option>
+                <option value="Outros">Outros</option>
+            </select>
+
+            <label for="">Fabricante:</label>
+            <select name="fabricante" id="fabricante">
+                <option value="Fiat">Fiat</option>
+                <option value="Ford">Ford</option>
+                <option value="Chevrolet">Chevrolet</option>
+                <option value="Volskwagen">Volskwagen</option>
+                <option value="Citroën">Citroën</option>
+                <option value="Renault">Renault</option>
+                <option value="Kia">Kia</option>
+                <option value="Outros">Outros</option>
+            </select>
+
+            <label>Modelo:</label> 
+            <input type="text" name="modelo" id="modelo" required/> 
+
+     </fieldset>
+
+     <fieldset>
+        <legend>Específicações do Veículo:</legend>
+
+        <label>Quilometragem:</label>
+        <input type="number" name="Quilometragem" id="Quilometragem" required/> 
+        <label>Placa:</label> 
+            <input type="text" name="Placa" id="Placa" required/> 
+
+            <label>Câmbio:</label>
+            <label>
+                <input type="radio" name="cambio" value="manual" /> Manual
+            </label>
+            
+            <label>
+                <input type="radio" name="cambio" value="automatico" required /> Automático
+            </label>
+            <br/>
+
+            <label>Blindagem:</label>
+            <label>
+                <input type="radio" name="Blindagem" value="sim" /> Sim
+            </label>
+            <label>
+                <input type="radio" name="Blindagem" value="nao" required /> Não
+            </label>
+            <br/>
+
+
+            <label>Número de Portas:</label>
+            <label>
+                <input type="radio" name="portas" value="2" /> 2 portas
+            </label>
+            <label>
+                <input type="radio" name="portas" value="3" required /> 3 portas
+            </label>
+            <label>
+                <input type="radio" name="portas" value="4" required /> 4 portas
+            </label>
+            <label>
+                <input type="radio" name="portas" value="+4" required /> Mais que 4 portas
+            </label>
+
+            <label for="">Combustível:</label>
+            <select name="combustivel" id="combustivel">
+                <option value="Etanol">Etanol</option>
+                <option value="Gasolina">Gasolina</option>
+                <option value="Diesel">Diesel</option>
+                <option value="Flex">Flex</option>
+                <option value="Outros">Outros</option>
+            </select>
+
+    </fieldset>
+
+    <fieldset>
+        <legend>Finalização e Confirmação do Cadastro:</legend>
+        
+        <label>Foto:</label>
+        <input type="file" name="arquivo" accept=".jpg"> <br />
+        (Aceitamos apenas imagens em formato JPG)<br /><br />
+
+        <label>Preço:</label>
+        <input type="number" name="preco" id="preco" required/> 
+
+        <br/>
+
+        <label for="desc">Descrição:</label>
+        <textarea name="desc"></textarea><br/><br/>
+
+        
+        <!--Botao envair-->
+        <input type="submit" value="Enviar"/>
+        <!-- Botao limpar-->
+        <input type="reset" value="Limpar"/>
+
+    </fieldset>
+    
+</body>
+</html>
